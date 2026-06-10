@@ -10,7 +10,9 @@ const skills = [
   'GraphQL',
   'NodeJS',
   'Electron',
-  'Flutter'
+  'Flutter',
+  'Python',
+  'Mongo'
 ];
 
 const About = () => {
@@ -38,7 +40,7 @@ const About = () => {
             ,  where I develop internal tools and systems for managing users at
             enterprise scale in the telecommunications industry.
           </p>
-          <p>Here are a few technologies I've been working with recently:</p>
+          <p>Here are a few technologies I've been working with recently 🛠</p>
           <ul className="skills-list">
             {skills.map(s => <li key={s}>{s}</li>)}
           </ul>
