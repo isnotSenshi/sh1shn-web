@@ -1,0 +1,29 @@
+.contact {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+
+  .numbered-heading {
+    justify-content: center;
+    font-size: var(--fz-md);
+    font-weight: 400;
+    color: var(--green);
+    font-family: var(--font-mono);
+
+    &::before { font-size: var(--fz-md); }
+    &::after  { display: none; }
+  }
+
+  .contact-title {
+    font-size: clamp(40px, 5vw, 60px);
+    color: var(--lightest-slate);
+    margin: 0 0 20px;
+  }
+
+  p {
+    font-size: var(--fz-lg);
+    line-height: 1.6;
+    color: var(--slate);
+    margin-bottom: 50px;
+  }
+}

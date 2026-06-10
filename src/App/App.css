@@ -1,0 +1,32 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  counter-reset: section;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1600px;
+  min-height: 100vh;
+  padding: 0 150px;
+}
+
+section {
+  margin: 0 auto;
+  padding: 100px 0;
+  max-width: 1000px;
+}
+
+@media (max-width: 1080px) {
+  main { padding: 0 100px; }
+}
+@media (max-width: 768px) {
+  main    { padding: 0 50px; }
+  section { padding: 80px 0; }
+}
+@media (max-width: 480px) {
+  main    { padding: 0 25px; }
+  section { padding: 60px 0; }
+}

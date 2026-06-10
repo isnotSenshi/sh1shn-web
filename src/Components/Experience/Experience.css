@@ -1,0 +1,137 @@
+.exp-inner {
+  display: flex;
+  min-height: 340px;
+}
+
+/* ── Tabs ── */
+.tab-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+
+  button {
+    display: inline-flex;
+    align-items: center;
+    width: var(--tab-width);
+    height: var(--tab-height);
+    padding: 0 20px 2px;
+    border-left: 2px solid var(--lightest-navy);
+    background: transparent;
+    color: var(--slate);
+    font-family: var(--font-mono);
+    font-size: var(--fz-xs);
+    text-align: left;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: var(--transition);
+
+    &:hover, &.active {
+      background: var(--light-navy);
+      color: var(--fuchsia);
+    }
+  }
+
+  .tab-highlight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: var(--tab-height);
+    background: var(--fuchsia);
+    border-radius: 2px;
+    transition: transform 0.25s var(--easing);
+  }
+}
+
+/* ── Panel ── */
+.tab-panel {
+  position: relative;
+  width: 100%;
+  margin-left: 20px;
+  padding: 10px 5px;
+  animation: fade-up 0.2s var(--easing) both;
+}
+
+.job-title {
+  margin-bottom: 5px;
+  font-size: var(--fz-xxl);
+  font-weight: 500;
+  color: var(--lightest-slate);
+}
+
+.job-company {
+  color: var(--fuchsia);
+
+  a {
+    color: var(--fuchsia);
+    &:hover { text-decoration: underline; }
+  }
+}
+
+.job-range {
+  margin-bottom: 25px;
+  color: var(--light-slate);
+  font-family: var(--font-mono);
+  font-size: var(--fz-xs);
+}
+
+.job-duties {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    color: var(--slate);
+    font-size: var(--fz-lg);
+    line-height: 1.5;
+
+    &::before {
+      content: '▹';
+      position: absolute;
+      left: 0;
+      color: var(--green);
+      line-height: 1.6;
+    }
+  }
+}
+
+/* ── Mobile: horizontal tabs ── */
+@media (max-width: 600px) {
+  .exp-inner {
+    display: block;
+  }
+
+  .tab-list {
+    flex-direction: row;
+    overflow-x: auto;
+    width: calc(100% + 50px);
+    margin-left: -25px;
+    margin-bottom: 30px;
+    padding: 0 25px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar { display: none; }
+
+    button {
+      width: auto;
+      min-width: 110px;
+      height: 40px;
+      border-left: 0;
+      border-bottom: 2px solid var(--lightest-navy);
+      justify-content: center;
+
+      &.active {
+        border-bottom-color: var(--fuchsia);
+      }
+    }
+
+    .tab-highlight { display: none; }
+  }
+
+  .tab-panel { margin-left: 0; }
+}

@@ -1,0 +1,44 @@
+.about-inner {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 50px;
+}
+
+.about-text {
+  p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+
+    a {
+      color: var(--fuchsia);
+      &:hover { text-decoration: underline; }
+    }
+  }
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0 10px;
+  padding: 0;
+  margin: 20px 0 0;
+  list-style: none;
+
+  li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-family: var(--font-mono);
+    font-size: var(--fz-xs);
+    color: var(--slate);
+
+    &::before {
+      content: '▹';
+      position: absolute;
+      left: 0;
+      color: var(--green);
+      font-size: var(--fz-sm);
+      line-height: 12px;
+    }
+  }
+}
