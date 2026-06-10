@@ -7,8 +7,6 @@ const skills = [
   'Java',
   'React',
   'Nest',
-  'GraphQL',
-  'NodeJS',
   'Electron',
   'Flutter',
   'Python',
