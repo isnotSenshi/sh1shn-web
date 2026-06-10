@@ -74,6 +74,6 @@ export const otherProjects = [
     github: 'https://github.com/isnotSenshi/GitGudGoGambling',
     external: null,
     tech: ['Electron', 'React + TS'],
-    description: 'Desktop assistant for Hi-Lo card counting on Infinite Blackjack. Real time count, calculates true count, bets using a Kelly Criterion-based system.',
+    description: 'Desktop simulator for Hi-Lo card counting on Infinite Blackjack. Real time count, calculates true count, bets using a Kelly Criterion-based system.',
   },
 ];
