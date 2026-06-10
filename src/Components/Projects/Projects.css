@@ -131,7 +131,7 @@
 
 /* Mockup visual backgrounds */
 .mockup-1 {
-  background: url('src/assets/images/bp-trslt-logo.gif') center / cover no-repeat;
+  background: url('../../assets/Assets/bp-trslt-logo.gif') center / cover no-repeat;
   &::before { background: transparent; }
   &:hover::before { background: var(--fuchsia-tint); }
   &::after {
