@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useScrollDirection, useOnClickOutside } from '../../Utils/hooks';
 import { navLinks } from '../../Constants';
 import resumePDF from '../../assets/Mathias_Lovera_CV_2026.pdf';
-import robotLogo from '../../assets/Assets/robot-logo.png';
+import robotLogo from '../../assets/images/robot-logo.png';
 import './Navbar.css';
 
 const HexLogo = () => (
