@@ -8,10 +8,10 @@ export const navLinks = [
 export const socialMedia = [
   { name: 'GitHub', url: 'https://github.com/isnotSenshi' },
   { name: 'LinkedIn', url: 'https://www.linkedin.com/in/mathiasalss/' },
-  { name: 'Email', url: 'mailto:lovera.mathias.ss@gmail.com' },
+  { name: 'Email', url: 'mailto:lovera.mathias.gg@gmail.com' },
 ];
 
-export const email = 'lovera.mathias.ss@gmail.com';
+export const email = 'lovera.mathias.gg@gmail.com';
 
 export const experienceData = [
   {
@@ -55,7 +55,6 @@ export const experienceData = [
 ];
 
 export const featuredProjects = [
-
   {
     title: 'BP Translator 🍔',
     github: 'https://github.com/isnotSenshi/bp-translator-v1',
@@ -65,6 +64,14 @@ export const featuredProjects = [
       `A desktop app for translating Japanese manga panels in real time.
        Capture any area of your screen, extract the text using OCR, 
        and get instant translations powered by OpenAI, Groq, or a fully local model — no internet required.`,
+  },
+  {
+    title: 'JessStudio 💅',
+    tech: ['React + Tailwind', 'Python Fast API', 'Mongo-DB'],
+    description:
+      `A booking web platform for a nail salon. Users can register, browse services, and schedule appointments, 
+      with integrated online payments with MercadoPago and a management system for handling bookings, schedules, and client itineraries. 
+      Built with a FastAPI backend and a MongoDB database, paired with a React + Tailwind CSS frontend.`,
   },
 ];
 

@@ -4,7 +4,7 @@
 
 [![Profile Views](https://komarev.com/ghpvc/?username=isnotSenshi&color=blueviolet&style=flat-square&label=Profile+Views)](https://github.com/isnotSenshi)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-mathiasalss-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mathiasalss/)
-[![Email](https://img.shields.io/badge/Email-contact-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:lovera.mathias.ss@gmail.com)
+[![Email](https://img.shields.io/badge/Email-contact-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:lovera.mathias.gg@gmail.com)
 
 </div>
 

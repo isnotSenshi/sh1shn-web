@@ -43,7 +43,7 @@ const FeaturedProject = ({ project, index }) => {
       </div>
 
       <div className="fp-image">
-        <a href={project.external || project.github || '#'} target="_blank" rel="noopener noreferrer">
+        <a href={project.external || project.github || null} target="_blank" rel="noopener noreferrer">
           <div className={`fp-mockup mockup-${index + 1}`} />
         </a>
       </div>
