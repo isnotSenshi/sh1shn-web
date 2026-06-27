@@ -56,6 +56,15 @@ export const experienceData = [
 
 export const featuredProjects = [
   {
+    title: 'DeadWeight 🏋️',
+    external: 'https://isnotsenshi.github.io/deadweight-info/',
+    tech: ['Flutter', 'Dart', 'Android + iOS', 'Google Drive Sync'],
+    description:
+      `A gamified workout tracker that coaches you like Duolingo — plan and log your training on a real calendar,
+       and a reactive avatar cheers your progress and misses you when you skip.
+       Local-first with Google Drive sync, scheduled reminders, and a home-screen widget. Built with Flutter for Android and iOS.`,
+  },
+  {
     title: 'BP Translator 🍔',
     github: 'https://github.com/isnotSenshi/bp-translator-v1',
     download: 'https://github.com/isnotSenshi/bp-translator-v1/releases/latest/download/bp-translator-Setup.exe',
@@ -67,11 +76,12 @@ export const featuredProjects = [
   },
   {
     title: 'JessStudio 💅',
+    external: 'https://jesstudio-web.onrender.com/',
     tech: ['React + Tailwind', 'Python Fast API', 'Mongo-DB'],
     description:
       `A booking web platform for a nail salon. Users can register, browse services, and schedule appointments, 
       with integrated online payments with MercadoPago and a management system for handling bookings, schedules, and client itineraries. 
-      Built with a FastAPI backend and a MongoDB database, paired with a React + Tailwind CSS frontend.`,
+      Built with a FastAPI backend and a MongoDB database, paired with a React + Tailwind CSS frontend, and Cloudinary for media storage.`,
   },
 ];
 

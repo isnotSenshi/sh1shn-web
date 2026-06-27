@@ -1,6 +1,6 @@
 import { useReveal } from '../../Utils/hooks';
 import { featuredProjects, otherProjects } from '../../Constants';
-import { IconGitHub, IconExternal, IconFolder, IconDownload } from '../Icons';
+import { IconGitHub, IconExternal, IconFolder, IconGlobe } from '../Icons';
 import './Projects.css';
 
 const FeaturedProject = ({ project, index }) => {
@@ -30,13 +30,8 @@ const FeaturedProject = ({ project, index }) => {
             </a>
           )}
           {project.external && (
-            <a href={project.external} target="_blank" rel="noopener noreferrer" aria-label="Live demo">
-              <IconExternal />
-            </a>
-          )}
-          {project.download && (
-            <a href={project.github} target="_blank" rel="noopener noreferrer" aria-label="Download">
-              <IconDownload />
+            <a href={project.external} target="_blank" rel="noopener noreferrer" aria-label="Live site">
+              <IconGlobe />
             </a>
           )}
         </div>
