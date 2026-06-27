@@ -116,37 +116,28 @@
   position: relative;
   overflow: hidden;
   transition: var(--transition);
+  /* every image scaled the same way into the identical box (not its natural size) */
+  background-color: #0a0a0a;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 
   &::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: var(--fuchsia-tint);
+    background: transparent;
     z-index: 3;
     transition: var(--transition);
   }
 
-  &:hover::before { background: transparent; }
+  &:hover::before { background: var(--fuchsia-tint); }
 }
 
 /* Mockup visual backgrounds (positional: mockup-N matches featured project N) */
-.mockup-1 {
-  background: #0a0a0a url('../../assets/images/deadweight-logo.png') center / contain no-repeat;
-  &::before { background: transparent; }
-  &:hover::before { background: var(--fuchsia-tint); }
-}
-
-.mockup-2 {
-  background: url('../../assets/images/bp-trslt-logo.gif') center / cover no-repeat;
-  &::before { background: transparent; }
-  &:hover::before { background: var(--fuchsia-tint); }
-}
-
-.mockup-3 {
-  background: url('../../assets/images/jess-studio-logo.png') center / cover no-repeat;
-  &::before { background: transparent; }
-  &:hover::before { background: var(--fuchsia-tint); }
-}
+.mockup-1 { background-image: url('../../assets/images/deadweight-logo.png'); }
+.mockup-2 { background-image: url('../../assets/images/bp-trslt-logo.gif'); }
+.mockup-3 { background-image: url('../../assets/images/jess-studio-logo.png'); }
 
 /* ══════════════════════════════
    Other Projects
