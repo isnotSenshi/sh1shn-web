@@ -134,10 +134,12 @@
   &:hover::before { background: var(--fuchsia-tint); }
 }
 
-/* Mockup visual backgrounds (positional: mockup-N matches featured project N) */
-.mockup-1 { background-image: url('../../assets/images/deadweight-logo.png'); }
-.mockup-2 { background-image: url('../../assets/images/bp-trslt-logo.gif'); }
-.mockup-3 { background-image: url('../../assets/images/jess-studio-logo.png'); }
+/* Mockup visual backgrounds (positional: mockup-N matches featured project N).
+   background-color matches each logo's own canvas so the contain-letterbox bars
+   are seamless (incl. under the hover fuchsia-tint). */
+.mockup-1 { background-image: url('../../assets/images/deadweight-logo.png'); background-color: #000; }
+.mockup-2 { background-image: url('../../assets/images/bp-trslt-logo.gif'); background-color: #000; }
+.mockup-3 { background-image: url('../../assets/images/jess-studio-logo.png'); background-color: #f6e1d9; }
 
 /* ══════════════════════════════
    Other Projects
