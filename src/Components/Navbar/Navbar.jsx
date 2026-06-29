@@ -6,7 +6,7 @@ import robotLogo from '../../assets/images/robot-logo.png';
 import './Navbar.css';
 
 const HexLogo = () => (
-  <a href="/" aria-label="home" className="nav-logo">
+  <a href="#" aria-label="home" className="nav-logo">
     <img src={robotLogo} alt="logo" />
   </a>
 );

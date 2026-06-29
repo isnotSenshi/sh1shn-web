@@ -93,4 +93,11 @@ export const otherProjects = [
     tech: ['Electron', 'React + TS'],
     description: 'Desktop simulator for Hi-Lo card counting on Infinite Blackjack. Real time count, calculates true count, bets using a Kelly Criterion-based system.',
   },
+  {
+    title: 'API Tech Race',
+    github: 'https://github.com/isnotSenshi/api-tech-race',
+    external: null,
+    tech: ['Go', 'Java', 'Rust', '.NET', 'JS'],
+    description: 'A race of 8 backend stacks to compare, in a measurable and visual way, how each technology handles reads, writes, and CPU under load — all fighting against the same PostgreSQL database so the comparison is fair.',
+  },
 ];

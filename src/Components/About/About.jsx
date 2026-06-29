@@ -10,7 +10,9 @@ const skills = [
   'Electron',
   'Flutter',
   'Python',
-  'Mongo DB'
+  'Mongo DB',
+  'Docker',
+  'SQL'
 ];
 
 const About = () => {
